@@ -1,8 +1,15 @@
 ﻿Console.WriteLine("Введите число ");
 int number = Convert.ToInt32(Console.ReadLine());
-int count = -number;
-while (count <= number)
+if (number > 0)
 {
-  Console.Write($"{count}, ");
-  count = count + 1;
+    int count = -number;
+    while (count <= number)
+    {
+        Console.Write($"{count}, ");
+        count = count + 1;
+    }
+}
+else
+{
+    Console.WriteLine("Некорректный ввод");
 }
